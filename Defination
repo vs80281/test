@@ -1,0 +1,24 @@
+Gradle and Maven are both build automation tools for Java. Although they are not the only tools available, we will be looking at the difference between them today.
+
+Build Automation tools automatically compile the software’s source code into machine code through a build script.
+
+Maven
+
+Maven is a software project management and comprehension tool. It is mostly used with Java-based projects.
+Maven uses an XML file to describe the project, its dependencies, the build order, and its required plug-ins.
+Maven does not use incrementality or *build caches, thus its builds times are slower than gradles’.
+Customization is complicated in Maven due to its limited parameters and requirements. However, this also makes Maven easier to understand and configure.
+Maven build scripts, written in XML, are neither as short nor as easy, to understand as Gradle scripts are.
+
+Gradle
+
+Gradle is a build automation system that uses a domain-specific language based on the programming language Groovy.
+Gradle does not use an XML file to describe a project that is being built, instead, it uses the domain-specific language 
+Groovy DSL; a Java-based DSL that supports Groovy language features.
+Gradle’s mechanisms for incrementality and work avoidance allow for faster build times.
+Gradle allows for a wide range of customizations and is very flexible. Gradle can be used for native development with C/C++. Custom builds are easy to do on Gradle.
+Gradle scripts are short, clean and easy to understand
+
+
+
+Note: Incrementality is the process of avoiding work by tracking input and output tasks, and by only running the parts of the code/files that have changed.”
