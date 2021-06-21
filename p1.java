@@ -29,7 +29,7 @@ Employee[] list={new employee("Tarun",211),
                 {
                 if(person.test(em))
                 {
-                System.out.println(em);
+                System.out.println(em+"");
                 }
                 }
                 }
